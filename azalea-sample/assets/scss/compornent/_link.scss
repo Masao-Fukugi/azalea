@@ -1,0 +1,8 @@
+a {
+    text-decoration: none;
+    opacity: 0.6s;
+    &:hover {
+        text-decoration: underline;
+        opacity: 0.6s;
+    }
+}
