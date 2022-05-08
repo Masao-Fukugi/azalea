@@ -14,8 +14,15 @@
         margin: 30px auto 60px;
         width: 100%;
         max-width: 600px;
-        p {
+        p,ul {
             margin-top: 30px;
+        }
+        li {
+            padding-left: 3%;
+            text-indent: -3%;
+            &::before {
+                content: "・";
+            }
         }
     }
     .place {
