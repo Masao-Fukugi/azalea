@@ -6,3 +6,47 @@ a {
         opacity: 0.6s;
     }
 }
+
+/*ボタンのcss基本指示*/
+.buttonBase {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    margin-left: auto;
+    width: 200px;
+    box-sizing: border-box;
+}
+.buttonLinkBase {
+    display: inline-block;
+    padding: 11px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.top-space {
+    top: 30px;
+}
+
+/*ボタンのcss指示*/
+.button {
+    @extend .buttonBase;
+    border: solid 2px #333;
+    &--sponser {
+        @extend .buttonBase;
+        @extend .top-space;
+        border: solid 2px #333;
+    }
+    &--result {
+        @extend .buttonBase;
+        @extend .top-space;
+        border: solid 2px #fff;
+    }
+    &__link {
+        @extend .buttonLinkBase;
+        &--result {
+            @extend .buttonLinkBase;
+            color: #fff;
+        }
+    }
+}

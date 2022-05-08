@@ -1,0 +1,32 @@
+.footer {
+    padding: 40px 0 20px;
+    width: 100%;
+    background-color:#151a59;
+    &__nav {
+        margin: 0 auto 15px;
+        width: 500px;
+    }
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__list {
+        &::after {
+            content: "|";
+            margin: 0 5px;
+            color: #fff;
+        }
+    }
+    &__link {
+        color: #fff;
+        font-size: 13px;
+    }
+    p {
+        text-align: center;
+        small {
+            color: #b6b6b6;
+            font-size: 12px;
+        }
+    }
+}

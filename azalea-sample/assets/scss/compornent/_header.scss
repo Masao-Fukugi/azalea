@@ -1,0 +1,56 @@
+.header {
+    width: 100%;
+    background-color:#151a59;
+    &__box {
+        position: relative;
+        padding: 5px 0;
+        margin: 0 auto;
+        max-width: 1000px;
+        height: 110px;
+    }
+    &__ttl {
+        margin: 0 auto;
+        width: 100px;
+    }
+    &__row {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        transform: translateY(-50%);
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+    &__logo {
+        width: 40px;
+    }
+    &__nav {
+        width: 100%;
+        background-color: #fff;
+        border-top: solid 6px #E95383;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0 13px;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    a {
+        display: inline-block;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        span {
+            display: block;
+            margin-bottom: -10px;
+            text-align: center;
+            font-size: 10px;
+        }
+    }
+}
