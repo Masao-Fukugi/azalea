@@ -1,0 +1,27 @@
+.bread {
+    width: 100%;
+    background-color: #F4F4F4;
+    &__menu {
+        padding:10px 0 10px 15px;
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 1000px;
+    }
+    &__list {
+        display: inline;
+        font-size: 11px;
+        &::after {
+            content: '>';
+            margin: 0 15px;
+        }
+        &:last-child {
+            &::after {
+                content: '';
+            }
+        }
+    }
+    &__link {
+        display: inline-block;
+        font-size: 11px;
+    }
+}
