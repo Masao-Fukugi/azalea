@@ -34,15 +34,11 @@
             margin: 15px 0;
             font-size: 16px;
             a {
-                display: block;
                 color: #E95383;
                 text-decoration: underline;
-                text-decoration-skip-ink: none;
-                transition: 0.6s;
-                &:hover {
+                 &:hover {
                     text-decoration: none;
-                    transition: 0.6s;
-                }
+                 }
             }
         }
     }
