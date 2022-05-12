@@ -666,7 +666,7 @@ img {
 }
 
 a {
-  display: block;
+  display: none;
   text-decoration: none;
   text-decoration-skip-ink: none;
   -webkit-transition: 0.6s;
