@@ -634,14 +634,49 @@ img {
   width: 100%;
 }
 
+.bread {
+  width: 100%;
+  background-color: #F4F4F4;
+}
+
+.bread__menu {
+  padding: 10px 0 10px 15px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.bread__list {
+  display: inline;
+  font-size: 11px;
+}
+
+.bread__list::after {
+  content: '>';
+  margin: 0 15px;
+}
+
+.bread__list:last-child::after {
+  content: '';
+}
+
+.bread__link {
+  display: inline-block;
+  font-size: 11px;
+}
+
 a {
+  display: block;
   text-decoration: none;
-  opacity: 0.6s;
+  text-decoration-skip-ink: none;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 a:hover {
   text-decoration: underline;
-  opacity: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 /*ボタンのcss基本指示*/
@@ -687,6 +722,7 @@ a:hover {
 .wrap {
   position: relative;
   margin: 0 auto 60px;
+  width: 100%;
   max-width: 1000px;
 }
 
@@ -811,6 +847,7 @@ a:hover {
   text-align: center;
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
+  text-decoration: none;
 }
 
 .header a span {
@@ -849,6 +886,10 @@ a:hover {
   content: "|";
   margin: 0 5px;
   color: #fff;
+}
+
+.footer__list a {
+  display: inline;
 }
 
 .footer__link {
@@ -999,6 +1040,10 @@ a:hover {
   font-weight: bold;
 }
 
+#top .table td a {
+  display: inline;
+}
+
 #top .sponser {
   position: relative;
   padding: 30px 0 70px;
@@ -1023,42 +1068,6 @@ a:hover {
   margin-right: 0;
 }
 
-.bread {
-  width: 100%;
-  background-color: #F4F4F4;
-}
-
-.bread__menu {
-  padding: 10px 0 10px 15px;
-  margin-bottom: 40px;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.bread__list {
-  display: inline;
-  font-size: 11px;
-}
-
-.bread__list::after {
-  content: '>';
-  margin: 0 15px;
-}
-
-.bread__list:last-child::after {
-  content: '';
-}
-
-.bread__link {
-  font-size: 11px;
-}
-
-#academy .wrap {
-  margin: 30px auto;
-  width: 100%;
-  max-width: 1000px;
-}
-
 #academy .sub__ttl {
   padding: 15px;
   margin-bottom: 40px;
@@ -1068,16 +1077,27 @@ a:hover {
   background-color: #151A59;
   font-size: 20px;
   line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #academy .profile {
-  margin: 30px auto;
+  margin: 30px auto 60px;
   width: 100%;
   max-width: 600px;
 }
 
-#academy .profile p {
+#academy .profile p, #academy .profile ul {
   margin-top: 30px;
+}
+
+#academy .profile li {
+  padding-left: 3%;
+  text-indent: -3%;
+}
+
+#academy .profile li::before {
+  content: "・";
 }
 
 #academy .place {
@@ -1104,13 +1124,9 @@ a:hover {
 #academy .place td a {
   color: #E95383;
   text-decoration: underline;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
 }
 
 #academy .place td a:hover {
   text-decoration: none;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
 }
 /*# sourceMappingURL=style.css.map */
